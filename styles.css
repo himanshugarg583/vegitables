@@ -271,3 +271,54 @@ a:focus {
     font-weight: 600;
     color: #16a34a;
 }
+
+/* Image size optimizations */
+.hero-image {
+    max-height: 16rem; /* 256px */
+}
+
+.about-image {
+    max-height: 16rem; /* 256px */
+}
+
+.product-image {
+    max-height: 10rem; /* 160px */
+}
+
+/* Responsive image sizing */
+@media (max-width: 768px) {
+    .hero-image,
+    .about-image {
+        max-height: 12rem; /* 192px on mobile */
+    }
+    
+    .product-image {
+        max-height: 8rem; /* 128px on mobile */
+    }
+    
+    /* Mobile logo adjustments */
+    .header-logo {
+        height: 2rem; /* Smaller on mobile */
+    }
+    
+    .footer-logo {
+        height: 1.75rem; /* Smaller on mobile */
+    }
+}
+
+/* Logo styling */
+.header-logo {
+    height: 2.5rem; /* 40px */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+}
+
+.footer-logo {
+    height: 2rem; /* 32px */
+    width: auto;
+    filter: brightness(1.2); /* Slightly brighter for dark footer */
+}

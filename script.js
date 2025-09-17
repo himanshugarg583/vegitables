@@ -333,7 +333,7 @@ function renderProducts(filter) {
         productCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 transform hover:-translate-y-1';
         productCard.innerHTML = `
             <div class="relative">
-                <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+                <img src="${product.image}" alt="${product.name}" class="product-image w-full h-40 object-cover">
                 <div class="absolute top-2 right-2">
                     <span class="bg-veggie-green text-white px-2 py-1 rounded-full text-xs font-semibold">
                         ${product.category.charAt(0).toUpperCase() + product.category.slice(1)}
