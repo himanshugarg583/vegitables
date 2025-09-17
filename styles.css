@@ -289,20 +289,60 @@ a:focus {
 @media (max-width: 768px) {
     .hero-image,
     .about-image {
-        max-height: 12rem; /* 192px on mobile */
+        max-height: 8rem; /* 128px on mobile - much smaller */
+        height: 8rem;
     }
     
     .product-image {
-        max-height: 8rem; /* 128px on mobile */
+        max-height: 6rem; /* 96px on mobile - smaller for better grid */
+        height: 6rem;
     }
     
-    /* Mobile logo adjustments */
+    /* Mobile logo adjustments - much smaller */
     .header-logo {
-        height: 2rem; /* Smaller on mobile */
+        height: 1.5rem; /* 24px - very compact for mobile */
     }
     
     .footer-logo {
-        height: 1.75rem; /* Smaller on mobile */
+        height: 1.25rem; /* 20px - very small for mobile footer */
+    }
+    
+    /* Mobile specific image optimizations */
+    .hero-section .lg\:w-1\/2 {
+        margin-bottom: 1rem;
+    }
+    
+    /* Ensure images don't overflow on small screens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Product grid spacing on mobile */
+    #products-grid {
+        gap: 1rem;
+    }
+}
+
+/* Additional mobile optimizations for very small screens */
+@media (max-width: 480px) {
+    .hero-image,
+    .about-image {
+        max-height: 6rem; /* 96px on very small screens */
+        height: 6rem;
+    }
+    
+    .product-image {
+        max-height: 5rem; /* 80px on very small screens */
+        height: 5rem;
+    }
+    
+    .header-logo {
+        height: 1.25rem; /* 20px on very small screens */
+    }
+    
+    .footer-logo {
+        height: 1rem; /* 16px on very small screens */
     }
 }
 
@@ -311,6 +351,7 @@ a:focus {
     height: 2.5rem; /* 40px */
     width: auto;
     transition: transform 0.3s ease;
+    object-fit: contain; /* Ensure logo maintains aspect ratio */
 }
 
 .header-logo:hover {
@@ -321,4 +362,35 @@ a:focus {
     height: 2rem; /* 32px */
     width: auto;
     filter: brightness(1.2); /* Slightly brighter for dark footer */
+    object-fit: contain; /* Ensure logo maintains aspect ratio */
+}
+
+/* Mobile image container improvements */
+@media (max-width: 768px) {
+    /* Hero section mobile optimization */
+    .hero-section .flex.flex-col.lg\:flex-row {
+        gap: 1rem;
+    }
+    
+    /* About section mobile optimization */
+    .about-section .flex.flex-col.lg\:flex-row {
+        gap: 1rem;
+    }
+    
+    /* Reduce padding on mobile for more space */
+    .container.mx-auto.px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Hero text sizing for mobile */
+    .hero-title {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    /* Better mobile card layout */
+    .bg-white.rounded-lg.shadow-md {
+        margin-bottom: 1rem;
+    }
 }
