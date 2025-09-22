@@ -1,4 +1,4 @@
-# FreshVeggies - Vegetables Selling Website
+# DigiThela - Vegetables Selling Website
 
 A modern, responsive landing page for a vegetables selling business built with HTML, Tailwind CSS, and JavaScript.
 
