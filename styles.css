@@ -394,3 +394,175 @@ a:focus {
         margin-bottom: 1rem;
     }
 }
+
+/* Navratri Popup Styling */
+.navratri-popup {
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.navratri-popup-content {
+    animation: slideInUp 0.6s ease-out;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { 
+        opacity: 0;
+        transform: translateY(100px) scale(0.9);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Popup Items Styling */
+.fruit-item, .veg-item, .demand-item {
+    background: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border-left: 4px solid #f97316;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-item {
+    border-left-color: #f97316; /* Orange for fruits */
+}
+
+.veg-item {
+    border-left-color: #16a34a; /* Green for vegetables */
+}
+
+.demand-item {
+    border-left-color: #9333ea; /* Purple for on-demand */
+}
+
+.fruit-item:hover, .veg-item:hover, .demand-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.price {
+    font-weight: 700;
+    color: #dc2626;
+    float: right;
+}
+
+.demand-price {
+    font-weight: 700;
+    color: #9333ea;
+    float: right;
+}
+
+/* Close button hover effect */
+#close-navratri-popup {
+    transition: all 0.3s ease;
+}
+
+#close-navratri-popup:hover {
+    transform: rotate(90deg);
+    color: #fbbf24;
+}
+
+/* Responsive popup adjustments */
+@media (max-width: 768px) {
+    .navratri-popup-content {
+        margin: 1rem;
+        max-height: 95vh;
+    }
+    
+    .navratri-popup-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .navratri-popup-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .fruit-item, .veg-item, .demand-item {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .grid.md\\:grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .navratri-popup-content {
+        margin: 0.5rem;
+        border-radius: 12px;
+    }
+    
+    .navratri-popup-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .fruit-item, .veg-item, .demand-item {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+    
+    .price, .demand-price {
+        display: block;
+        float: none;
+        text-align: right;
+        margin-top: 0.25rem;
+    }
+}
+
+/* Special animations for popup elements */
+.navratri-popup-content .border-b-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.navratri-popup-content .border-b-2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f97316, transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Festive glow effect */
+.navratri-popup-content h2 {
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+/* Scrollbar styling for popup */
+.navratri-popup-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.navratri-popup-content::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.navratri-popup-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #f97316, #ea580c);
+    border-radius: 3px;
+}
+
+.navratri-popup-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ea580c, #dc2626);
+}

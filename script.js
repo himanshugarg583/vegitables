@@ -1,112 +1,148 @@
-// Vegetables data
+// Vegetables data - Updated with new prices
 const vegetables = [
     {
         id: 1,
-        name: 'Organic Spinach',
-        price: 399,
+        name: 'पालक (Spinach)',
+        price: 100,
         category: 'leafy',
         image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=300&h=300&fit=crop',
-        description: 'Fresh organic spinach leaves, perfect for salads and cooking.',
+        description: '🌿 Fresh organic spinach leaves, perfect for vrath and cooking.',
         weight: '1 kg'
     },
     {
         id: 2,
-        name: 'Baby Carrots',
-        price: 249,
+        name: 'गाजर (Carrot)',
+        price: 40,
         category: 'root',
         image: 'https://images.unsplash.com/photo-1445282768818-728615cc910a?w=300&h=300&fit=crop',
-        description: 'Sweet and crunchy baby carrots, perfect for snacking.',
+        description: '🥕 Sweet and crunchy carrots, perfect for Navratri.',
         weight: '1 kg'
     },
     {
         id: 3,
-        name: 'Roma Tomatoes',
-        price: 499,
+        name: 'टमाटर (Tomato - Top Quality)',
+        price: 40,
         category: 'fruit',
         image: 'https://images.unsplash.com/photo-1546470427-227b00d1dfa3?w=300&h=300&fit=crop',
-        description: 'Juicy Roma tomatoes, ideal for sauces and cooking.',
+        description: '🍅 Fresh top quality tomatoes, ideal for cooking.',
         weight: '1 kg'
     },
     {
         id: 4,
-        name: 'Organic Kale',
-        price: 349,
+        name: 'पत्ता गोभी (Cabbage)',
+        price: 45,
         category: 'leafy',
         image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300&h=300&fit=crop',
-        description: 'Nutrient-rich organic kale, perfect for smoothies and salads.',
-        weight: '1 bunch'
+        description: '🥬 Fresh cabbage, perfect for healthy dishes.',
+        weight: '1 kg'
     },
     {
         id: 5,
-        name: 'Red Bell Peppers',
-        price: 599,
+        name: 'शिमला मिर्च (Capsicum)',
+        price: 100,
         category: 'fruit',
         image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=300&h=300&fit=crop',
-        description: 'Sweet and colorful red bell peppers, great for cooking.',
-        weight: '500g'
+        description: '🫑 Colorful bell peppers, great for cooking.',
+        weight: '1 kg'
     },
     {
         id: 6,
-        name: 'Sweet Potatoes',
-        price: 399,
+        name: 'आलू (Potato - Top Quality)',
+        price: 22,
         category: 'root',
         image: 'https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?w=300&h=300&fit=crop',
-        description: 'Nutritious sweet potatoes, perfect for roasting.',
+        description: '🥔 Premium quality potatoes, perfect for all dishes.',
         weight: '1 kg'
     },
     {
         id: 7,
-        name: 'Broccoli Crowns',
-        price: 449,
+        name: 'ब्रोकली (Broccoli)',
+        price: 350,
         category: 'leafy',
         image: 'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=300&h=300&fit=crop',
-        description: 'Fresh broccoli crowns, packed with vitamins.',
-        weight: '500g'
+        description: '🥦 Fresh broccoli crowns, packed with vitamins.',
+        weight: '1 kg'
     },
     {
         id: 8,
-        name: 'Cucumber',
-        price: 199,
+        name: 'खीरा (Cucumber)',
+        price: 50,
         category: 'fruit',
         image: 'https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=300&h=300&fit=crop',
-        description: 'Crisp and refreshing cucumbers, perfect for salads.',
+        description: '❄️ Crisp and refreshing cucumbers, perfect for salads.',
         weight: '1 kg'
     },
     {
         id: 9,
-        name: 'Red Onions',
-        price: 299,
+        name: 'प्याज (Onion)',
+        price: 28,
         category: 'root',
         image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=300&h=300&fit=crop',
-        description: 'Sharp and flavorful red onions, essential for cooking.',
+        description: '🧅 Fresh onions, essential for cooking.',
         weight: '1 kg'
     },
     {
         id: 10,
-        name: 'Lettuce Mix',
-        price: 399,
+        name: 'भिंडी (Lady Finger)',
+        price: 50,
         category: 'leafy',
         image: 'https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=300&h=300&fit=crop',
-        description: 'Mixed lettuce varieties, perfect for fresh salads.',
-        weight: '250g'
+        description: '🥦 Fresh bhindi, perfect for traditional dishes.',
+        weight: '1 kg'
     },
     {
         id: 11,
-        name: 'Zucchini',
-        price: 349,
+        name: 'बैंगन (Eggplant)',
+        price: 50,
         category: 'fruit',
         image: 'https://images.unsplash.com/photo-1601001815894-4bb6c81416d7?w=300&h=300&fit=crop',
-        description: 'Fresh zucchini, versatile for many dishes.',
+        description: '🍆 Fresh eggplant, versatile for many dishes.',
         weight: '1 kg'
     },
     {
         id: 12,
-        name: 'Russet Potatoes',
-        price: 499,
-        category: 'root',
+        name: 'फूल गोभी (Cauliflower)',
+        price: 120,
+        category: 'leafy',
         image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=300&h=300&fit=crop',
-        description: 'Classic russet potatoes, perfect for baking and frying.',
-        weight: '2 kg'
+        description: '🌸 Fresh cauliflower, perfect for Navratri dishes.',
+        weight: '1 piece'
+    },
+    {
+        id: 13,
+        name: 'हरी मिर्च (Green Chili)',
+        price: 50,
+        category: 'fruit',
+        image: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=300&h=300&fit=crop',
+        description: '🌶️ Fresh green chilies, add spice to your dishes.',
+        weight: '1 kg'
+    },
+    {
+        id: 14,
+        name: 'धनिया (Coriander)',
+        price: 150,
+        category: 'leafy',
+        image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=300&h=300&fit=crop',
+        description: '🌿 Fresh coriander leaves, aromatic herb.',
+        weight: '1 kg'
+    },
+    {
+        id: 15,
+        name: 'पुदीना (Mint)',
+        price: 120,
+        category: 'leafy',
+        image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300&h=300&fit=crop',
+        description: '🌿 Fresh mint leaves, refreshing and aromatic.',
+        weight: '1 kg'
+    },
+    {
+        id: 16,
+        name: 'नींबू (Lemon)',
+        price: 70,
+        category: 'fruit',
+        image: 'https://images.unsplash.com/photo-1546470427-227b00d1dfa3?w=300&h=300&fit=crop',
+        description: '🍋 Fresh lemons, perfect for flavoring dishes.',
+        weight: '1 kg'
     }
 ];
 
@@ -457,3 +493,52 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Navratri Special Offer Popup Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const navratriPopup = document.getElementById('navratri-popup');
+    const closeNavratriPopup = document.getElementById('close-navratri-popup');
+    
+    // Show popup after 5 seconds
+    setTimeout(() => {
+        // Always show popup on page load/reload
+        navratriPopup.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }, 5000); // 5 seconds delay
+    
+    // Close popup functionality
+    function closePopup() {
+        navratriPopup.classList.add('hidden');
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+    
+    // Close button click
+    closeNavratriPopup.addEventListener('click', closePopup);
+    
+    // Close on background click
+    navratriPopup.addEventListener('click', function(e) {
+        if (e.target === navratriPopup) {
+            closePopup();
+        }
+    });
+    
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !navratriPopup.classList.contains('hidden')) {
+            closePopup();
+        }
+    });
+    
+    // Add festive animation to items
+    setTimeout(() => {
+        const items = document.querySelectorAll('.fruit-item, .veg-item, .demand-item');
+        items.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    item.style.transform = 'scale(1)';
+                }, 200);
+            }, index * 50);
+        });
+    }, 6000);
+});
